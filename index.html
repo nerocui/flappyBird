@@ -232,7 +232,7 @@
                     if(birdX > left && birdX < right && birdY < lower && birdY > upper){
                         scoreActive = true;
                     }
-                    if(scoreActive && birdX >= right){
+                    else if(scoreActive && birdX >= right){
                         scoreActive = false;
                         score ++;
                     }
