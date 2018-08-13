@@ -211,10 +211,11 @@
             function reset(){
                 jumpSpeed  = 0;
                 freeFallSpeed = 0;
-                birdX      = canvas.width/2;
-                birdY      = canvas.height/2;
+                birdX      = canvas.width/2 - 17;
+                birdY      = canvas.height/2 + 37;
                 listOfPipe = [];
                 score = 0;
+                scoreActive = false;
             }
             
             function checkCollision(){
