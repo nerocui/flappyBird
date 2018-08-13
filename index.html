@@ -162,7 +162,7 @@
 
             function drawAll(){
                 canvasContext.drawImage(background, 0, 0);
-                drawScore();
+                
                 if(gameState == 'menu'){
                     canvasContext.drawImage(message, canvas.width/2 - message.width/2, canvas.height/2 - message.height/2);
                     return;
@@ -177,6 +177,7 @@
                     
                 }
                 canvasContext.drawImage(blueBird, birdX, birdY);
+                drawScore();
             }
 
             function moveAll(){
